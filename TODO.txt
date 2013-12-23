@@ -9,6 +9,12 @@ As the functionality expands, lines from this file will move to the README.md fi
   - Indicate the kind of files to compare
 - Show EXIF information along with the file
 - Compare other types of files (still deciding how to visually show the identical files)
+- Show progress searching for duplicates
+- Show progress when deleting duplicates (relative position in the file)
+
+Issue fixing
+- Do not fail when there aren't any duplicates, just report it gracefuly
+- Allow re-running the visual comparison without reruning the search.
 
 
 
