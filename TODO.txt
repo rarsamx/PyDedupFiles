@@ -1,0 +1,9 @@
+As the functionality expands, lines from this file will move to the README.md file
+
+
+- Combine the search for duplicates and the visual comparison into a single executable
+- Identify identical JPEG files even if the EXIF file is different
+- Show EXIF information along with the file
+
+
+
