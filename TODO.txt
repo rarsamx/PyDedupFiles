@@ -2,8 +2,13 @@ As the functionality expands, lines from this file will move to the README.md fi
 
 
 - Combine the search for duplicates and the visual comparison into a single executable
-- Identify identical JPEG files even if the EXIF file is different
+- Identify identical JPEG files even if the EXIF file is different (by using imagemagick identify)
+- Identify "similar" files, such as the same image in different sizes (Probably using Imagemagick)
+- Allow setting configuration parameters 
+  - Indicate how to do the comparison (from fast binary comparison to slower comparisons)
+  - Indicate the kind of files to compare
 - Show EXIF information along with the file
+- Compare other types of files (still deciding how to visually show the identical files)
 
 
 
