@@ -13,7 +13,6 @@ As the functionality expands, lines from this file will move to the README.md fi
 - Show progress when deleting duplicates (relative position in the file)
 
 Issue fixing
-- Do not fail when there aren't any duplicates, just report it gracefuly
 - Allow re-running the visual comparison without reruning the search.
 
 

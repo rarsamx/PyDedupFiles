@@ -116,8 +116,8 @@ class FileHandler():
         line = self.read_next()
         if line != "=====":
             print line
-            print "This is not a duplicates file"
-            sys.exit
+            print "This is not a duplicates file or there are no duplicates"
+            sys.exit(1)
 
     def read_next(self):
         return self.dups_file.readline().rstrip()
