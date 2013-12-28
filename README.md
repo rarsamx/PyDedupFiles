@@ -8,10 +8,9 @@ Please see the TODO.txt file for a roadmap
 ======= Features
 - Scans all the files under the specified path looking for binary identical jpg images
 - Presents the identical files side to side allowing the user to delete one of the duplicates
+- Allow re-running the visual comparison without reruning the search. It will skip already deleted files
 
 ======= Known limitations
-- The scan needs to run before each visual comparison.
-  If the visual comparison is restarted it starts from the beginning but will generate an error when it does not find the already deleted files 
 - Currently the comparison only works for jpg files and only comparing the MD5SUM of the files.
   This means that identical jpg files with different EXIF information are not binary identical so they will not show in the comparison
 

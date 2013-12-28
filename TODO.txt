@@ -13,7 +13,8 @@ As the functionality expands, lines from this file will move to the README.md fi
 - Show progress when deleting duplicates (relative position in the file)
 
 Issue fixing
-- Allow re-running the visual comparison without reruning the search.
+- Only set the images once left and right are set.
+- Properly initialize image and display path in case the file is empty or there are no duplicates
 
 
 
