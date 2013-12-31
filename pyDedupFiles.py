@@ -120,11 +120,16 @@ class ImageFrame(Tkinter.Frame):
         self.image_filename = image_filename
         
     def display_image(self):
-        self.path_label.configure (text = self.image_filename)
-        image_file =  Image.open(self.image_filename)
-        image_file.thumbnail((640, 480), Image.ANTIALIAS)
-        self.image = ImageTk.PhotoImage(image_file)
-        self.img_label.configure(image =  self.image)
+        try:
+            self.path_label.configure (text = self.image_filename)
+            image_file =  Image.open(self.image_filename)
+            image_file.thumbnail((640, 480), Image.ANTIALIAS)
+            self.image = ImageTk.PhotoImage(image_file)
+            self.img_label.configure(text = None, image =  self.image)
+        except:
+            logging.exception("")
+            self.img_label.configure(image =  None)
+            #self.img_label.configure(text =  "Unable to read image file")
 
 class FileHandler():
     dups_file = None
