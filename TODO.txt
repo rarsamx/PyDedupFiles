@@ -11,10 +11,13 @@ As the functionality expands, lines from this file will move to the README.md fi
 - Compare other types of files (still deciding how to visually show the identical files)
 - Show progress searching for duplicates
 - Show progress when deleting duplicates (relative position in the file)
+- Advise if all the pictures in a folder are duplicated
+- Allow deleting both (Ask for confirmation)
+- Truncate processed portion of the file
+- Option to move a file to another folder (I think it's scope creep)
+- Remember what was the last folder 
 
 Issue fixing
-- Only set the images once left and right are set.
-- Properly initialize image and display path in case the file is empty or there are no duplicates
 
 
 
