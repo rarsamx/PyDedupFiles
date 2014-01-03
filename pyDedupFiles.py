@@ -4,6 +4,8 @@ import Tkinter
 from PIL import Image, ImageTk
 import logging
 
+import math, operator
+
 class Application(Tkinter.Frame):
     file_handler = None
 
@@ -143,6 +145,19 @@ class FileHandler():
     def del_file(self, filename):
         logging.info("Deleting: %s" % filename)
         os.remove(filename)
+
+def compare(filename1, filename2, threshold):
+    img1=Image.open(filename1)
+    img1.thumbnail((128, 128), Image.ANTIALIAS)
+    img2=Image.open(filename2)
+    img2.thumbnail((128, 128), Image.ANTIALIAS)
+    h1 = img1.histogram()
+    h2 = img2.histogram()
+    rms = math.sqrt(reduce(operator.add,map(lambda a,b: (a-b)**2, h1, h2))/len(h1))
+    return rms < threshold
+
+
+
 
     
 def main():
