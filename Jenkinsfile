@@ -11,6 +11,7 @@ pipeline {
                     echo "This is the second step"
                     hostname
                     which identify
+                    ls -lR
                     chmod +x findDuplicateImages.sh
                     echo "nothing" > test1.jpg
                     echo "nothing" > test2.jpg
