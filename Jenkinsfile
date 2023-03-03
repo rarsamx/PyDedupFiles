@@ -9,7 +9,8 @@ pipeline {
                 sh '''
                     python --version
                     pwd
-                    apk add imagemagick
+                    sudo apt-get update
+                    sudo apt-get install imagemagick
                 '''
                 sh '''
                     echo "This is the second step"
