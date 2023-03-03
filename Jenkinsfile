@@ -2,7 +2,7 @@
 pipeline {
     agent none
     options { 
-        timeout(time: 5, unit: 'SECONDS')
+        timeout(time: 20, unit: 'SECONDS')
     }
 /*    agent { docker { image 'python:3.10.7-alpine' } } */
 /*    agent { docker { image 'python:3' } }*/
