@@ -1,6 +1,8 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { docker { image 'python:3.10.7-alpine' } }
+/*    agent { docker { image 'python:3.10.7-alpine' } } */
+    agent { docker { image 'fedora/python' } }
+
     stages {
         stage('build') {
             steps {
