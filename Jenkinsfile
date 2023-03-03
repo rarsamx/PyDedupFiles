@@ -1,6 +1,7 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent none
+    /*agent none */
+    agent { docker { image 'dpokidov/imagemagick' } }
 /*
     options { 
         timeout(time: 60, unit: 'SECONDS')
@@ -10,6 +11,7 @@ pipeline {
 /*    agent { docker { image 'python:3' } }*/
 
     stages {
+/*
         stage('Check python') {
             
             agent { docker { image 'python:3.10.7-alpine' } } 
@@ -17,8 +19,9 @@ pipeline {
                 sh 'python --version'
             }
         }
+*/      
         stage('Find dups') {
-            agent { docker { image 'dpokidov/imagemagick' } }
+/*            agent { docker { image 'dpokidov/imagemagick' } } */
             steps {
                 sh '''
                     echo "This is the second step"
