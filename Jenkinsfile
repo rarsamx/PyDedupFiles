@@ -7,10 +7,12 @@ pipeline {
                 sh 'python --version'
                 sh '''
                     echo "This is the second step"
-                    ls -lah
                     chmod +x findDuplicateImages.sh 
-                    ls -lah
-                    ./findDuplicateImages.sh .
+                    mkdir test
+                    cd test
+                    echo "nothing" > test1.jpg
+                    echo "nothing" > test2.jpg
+                    ./findDuplicateImages.sh ./test
                 '''
             }
         }
