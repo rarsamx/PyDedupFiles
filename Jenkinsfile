@@ -1,9 +1,11 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
     agent none
+/*
     options { 
         timeout(time: 60, unit: 'SECONDS')
     }
+*/
 /*    agent { docker { image 'python:3.10.7-alpine' } } */
 /*    agent { docker { image 'python:3' } }*/
 
