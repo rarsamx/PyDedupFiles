@@ -6,9 +6,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh '''
-                    python --version
-                '''
+                sh 'python --version'
                 sh '''
                     echo "This is the second step"
                     chmod +x findDuplicateImages.sh
