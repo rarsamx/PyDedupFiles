@@ -1,15 +1,5 @@
-# For Debian based systems
-command -v tempfile > /dev/null 2>&1 && 
-{ 
-  index=$(tempfile)
-  dupmd5sumfile=$(tempfile)
-}
-# For Fedora based systems
-command -v mktemp > /dev/null 2>&1 && 
-{ 
-  index=$(mktemp)
-  dupmd5sumfile=$(mktemp)
-}
+index=$(mktemp)
+dupmd5sumfile=$(mktemp)
 
 
 #find "${1}" -type f -iname '*.jpg' -exec md5sum {} \; | sort --key=2 --ignore-case > ${index}
