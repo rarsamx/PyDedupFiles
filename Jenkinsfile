@@ -8,6 +8,7 @@ pipeline {
                 sh '''
                     echo "This is the second step"
                     ls -lah
+                    chmod +x findDuplicateImages.sh 
                 '''
             }
         }
