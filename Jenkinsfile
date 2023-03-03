@@ -10,7 +10,7 @@ pipeline {
                     ls -lah
                     chmod +x findDuplicateImages.sh 
                     ls -lah
-                    findDuplicateImages.sh .
+                    ./findDuplicateImages.sh .
                 '''
             }
         }
