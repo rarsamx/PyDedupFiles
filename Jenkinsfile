@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh '''
                     python --version
-                    who
+                    pwd
                     apk add imagemagick
                 '''
                 sh '''
