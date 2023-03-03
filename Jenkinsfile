@@ -9,6 +9,7 @@ pipeline {
                 sh 'python --version'
                 sh '''
                     echo "This is the second step"
+                    hostnamectl
                     which identify
                     chmod +x findDuplicateImages.sh
                     echo "nothing" > test1.jpg
