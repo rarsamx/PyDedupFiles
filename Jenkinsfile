@@ -8,9 +8,6 @@ pipeline {
             steps {
                 sh '''
                     python --version
-                    pwd
-                    sudo apt-get update
-                    sudo apt-get install imagemagick
                 '''
                 sh '''
                     echo "This is the second step"
