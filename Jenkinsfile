@@ -4,8 +4,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
-                sh 'apk add imagemagick'
+                sh '''
+                    python --version'
+                    who
+                    apk add imagemagick'
                 sh '''
                     echo "This is the second step"
                     chmod +x findDuplicateImages.sh
