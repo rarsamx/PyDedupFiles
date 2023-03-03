@@ -1,5 +1,6 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
+    agent { label "linux" }
 /*    agent { docker { image 'python:3.10.7-alpine' } } */
 /*    agent { docker { image 'python:3' } }*/
 
